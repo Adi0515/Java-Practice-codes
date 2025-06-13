@@ -1,10 +1,9 @@
-// step 02
 
 abstract class BankAccount{
     private   String AccountHolderName;
     private double Balance;
 
-    // step 03 - creating a constructor
+   
 
     public BankAccount(String AccountHolderName, double Balance){
         this.AccountHolderName=AccountHolderName;
@@ -14,7 +13,7 @@ abstract class BankAccount{
 
     public abstract void displayDetails();
 
-    // step 04 - encapsulation
+    
 
     public String getAccountHolderName(){
         return AccountHolderName;
@@ -33,7 +32,7 @@ abstract class BankAccount{
         this.Balance = Balance;
     }
 
-    // polymorphism
+ 
 
     public void deposit(double amount){
         if(amount>0){
@@ -68,7 +67,7 @@ class savingsAccount extends BankAccount{
 
 }
 
-// step 01
+
 public class Main{
     public static void main(String[] args){
         BankAccount savings = new savingsAccount("Adithya", 25890.00);
